@@ -3,16 +3,41 @@
 let prompt = require('prompt-sync')()
 
 function fibonacci(n) {
-    var fibonacciArray = [0, 1]; 
+  var fibonacciArray = [0, 1];
 
-    for (var i = 2; i < n; i++) {
-      var nextNumber = fibonacciArray[i - 1] + fibonacciArray[i - 2];
-      fibonacciArray.push(nextNumber);
-    }
-  
-    return fibonacciArray;
+  for (var i = 2; i < n; i++) {
+    var nextNumber = fibonacciArray[i - 1] + fibonacciArray[i - 2];
+    fibonacciArray.push(nextNumber);
   }
+
+  return fibonacciArray;
+}
+
+var fibonacciSequence = fibonacci(10);
+console.log(fibonacciSequence);
+
+
+
+
+
+//                  ou
+
+
+
+
+
+
+let numAnterior = 0;
+let numAtual = 1
+
+console.log(numAnterior);
+console.log(numAtual);
+for (let contador = 0; contador < 8; contador++) {
   
-  var fibonacciSequence = fibonacci(10);
-  console.log(fibonacciSequence);
-  
+  let resultado = numAnterior + numAtual;
+  console.log(resultado);
+
+  numAnterior = numAtual;
+  numAtual = resultado;
+
+}
