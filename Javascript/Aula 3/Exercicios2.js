@@ -7,4 +7,13 @@ for (var i = 1; i <= 10; i++) {
       console.log(i);
     }
   }
+
+
+  // ou
+
   
+
+  for (let contador = 0; contador <= 10; contador += 2) {
+    console.log(contador);
+    
+  }
