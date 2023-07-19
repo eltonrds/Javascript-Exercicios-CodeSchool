@@ -3,6 +3,9 @@
 // idade e mostre uma mensagem quando a idade do usuário for
 // maior que 18.
 
+
+//se nao tiver a condicao usar o doWhile
+
 let prompt = require('prompt-sync')()
 
 var idade = parseInt(prompt("Digite a sua idade:"));
@@ -12,3 +15,15 @@ while (idade < 18) {
 }
 
 console.log("Você é maior de 18 anos!");
+
+
+
+// ou 
+let idade
+do {
+  let idade = parseInt(prompt("Digite sua idade: "))
+  
+} while (idade < 18);
+
+console.log("Maior que 18 anos");
+
