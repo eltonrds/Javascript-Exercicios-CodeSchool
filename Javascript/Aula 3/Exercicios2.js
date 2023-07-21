@@ -1,12 +1,20 @@
+import PromptSync from 'prompt-sync';
+
+const prompt = PromptSync();
+
+
 // Imprimir números pares de 1 a 10.
 
-let prompt = require('prompt-sync')()
+// let prompt = require('prompt-sync')()
 
-for (var i = 1; i <= 10; i++) {
+export function numeroPar() {
+  for (var i = 1; i <= 10; i++) {
     if (i % 2 === 0) {
       console.log(i);
     }
   }
+}
+
 
 
   // ou
